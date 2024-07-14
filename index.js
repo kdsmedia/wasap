@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { Client, MessageMedia } = require('whatsapp-web.js');
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
 // Load product data from JSON file
@@ -8,8 +8,9 @@ const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'products.json'
 
 // Initialize WhatsApp client
 const client = new Client({
+    authStrategy: new LocalAuth(),
     puppeteer: {
-        headless: true,
+        headless: false,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
