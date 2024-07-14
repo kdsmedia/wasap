@@ -76,9 +76,10 @@ function handleProductSelection(message) {
 }
 
 function handleOptionSelection(message) {
+    const optionId = parseInt(message.body, 10);
     const productId = parseInt(message.body, 10) - 1;
     const product = products[productId];
-    const option = product.options.find(o => o.id === parseInt(message.body, 10));
+    const option = product.options.find(o => o.id === optionId);
     if (!option) {
         return message.reply('Opsi tidak ditemukan. Ketik "menu" untuk melihat daftar produk.');
     }
