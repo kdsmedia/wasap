@@ -59,7 +59,7 @@ client.on('message', async message => {
 
         message.reply(reply);
     } else if (message.body === '1') {
-        const reply = `Silakan melakukan pembayaran melalui QRIS dengan total harga Rp${totalPrice}.\n\n[QRIS](assets/qris.png)\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
+        const reply = `Silakan melakukan pembayaran melalui QRIS dengan total harga Rp${totalPrice}.\n\n[QRIS](assets/qris.jpeg)\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
 
         message.reply(reply);
     } else if (message.body === '2') {
