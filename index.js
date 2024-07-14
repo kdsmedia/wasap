@@ -1,52 +1,53 @@
+require('dotenv').config();
+const { Client, LocalAuth } = require('whatsapp-web.js');
+const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const { Client, LocalAuth } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
 
-// Load product data from JSON file
-const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'products.json'), 'utf8'));
+const app = express();
+app.use(express.json());
+
+// Load products data
+const products = require('./products.json');
 
 // Initialize WhatsApp client
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-        headless: false,
+        headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
 
-// Event: QR Code generated, scan with WhatsApp
 client.on('qr', qr => {
-    qrcode.generate(qr, { small: true });
-    console.log('QR Code generated, scan it with your WhatsApp mobile app');
+    console.log('QR Code received:', qr);
 });
 
-// Event: WhatsApp client ready
 client.on('ready', () => {
     console.log('Client is ready!');
-    // Send a welcome message when someone sends the first message
-    client.on('message', async (message) => {
-        if (message.body.toLowerCase() === 'menu') {
-            sendMenu(message);
-        } else if (/^[1-5]$/.test(message.body)) {
-            handleProductSelection(message);
-        } else if (/^[1-5]$/.test(message.body)) {
-            handleOptionSelection(message);
-        } else if (message.body.startsWith('http') && message.body.split(' ').length === 2) {
-            handleOrder(message);
-        } else if (message.body === '1') {
-            handlePaymentQris(message);
-        } else if (message.body === '2') {
-            handlePaymentDana(message);
-        } else if (message.body.toLowerCase().includes('bukti pembayaran')) {
-            message.reply('Terima kasih atas pembayaran Anda. Pesanan Anda sedang diproses.');
-        } else {
-            message.reply('Ketik "menu" untuk melihat daftar produk.');
-        }
-    });
 });
 
-// Send menu with product options
+// Welcome message for new messages
+client.on('message', async message => {
+    if (message.body.toLowerCase() === 'menu') {
+        sendMenu(message);
+    } else if (/^[1-5]$/.test(message.body)) {
+        handleProductSelection(message);
+    } else if (/^[1-5]$/.test(message.body)) {
+        handleOptionSelection(message);
+    } else if (message.body.startsWith('http') && message.body.split(' ').length === 2) {
+        handleOrder(message);
+    } else if (message.body === '1') {
+        handlePaymentQris(message);
+    } else if (message.body === '2') {
+        handlePaymentDana(message);
+    } else if (message.body.toLowerCase().includes('bukti pembayaran')) {
+        message.reply('Terima kasih atas pembayaran Anda. Pesanan Anda sedang diproses.');
+    } else {
+        message.reply('Ketik "menu" untuk melihat daftar produk.');
+    }
+});
+
 function sendMenu(message) {
     let reply = 'Selamat datang di ALTOMEDIA! Pilih produk yang Anda inginkan:\n\n';
 
@@ -60,7 +61,6 @@ function sendMenu(message) {
     message.reply(reply);
 }
 
-// Handle product selection
 function handleProductSelection(message) {
     const productId = parseInt(message.body, 10) - 1;
     const product = products[productId];
@@ -75,7 +75,6 @@ function handleProductSelection(message) {
     message.reply(reply);
 }
 
-// Handle option selection
 function handleOptionSelection(message) {
     const productId = parseInt(message.body, 10) - 1;
     const product = products[productId];
@@ -88,7 +87,6 @@ function handleOptionSelection(message) {
     message.reply(reply);
 }
 
-// Handle order details
 function handleOrder(message) {
     const [link, quantity] = message.body.split(' ');
     const product = products.find(p => p.options.some(o => o.id == quantity));
@@ -104,19 +102,21 @@ function handleOrder(message) {
     message.reply(reply);
 }
 
-// Handle QRIS payment
 function handlePaymentQris(message) {
     const reply = `Silakan melakukan pembayaran melalui QRIS dengan total harga Rp${totalPrice}.\n\n![QRIS](https://example.com/qris.png)\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
 
     message.reply(reply);
 }
 
-// Handle DANA payment
 function handlePaymentDana(message) {
     const reply = `Silakan melakukan pembayaran ke akun DANA berikut:\n\nNama: ALTOMEDIA\nNomor DANA: 08123456789\n\nTotal harga: Rp${totalPrice}\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
 
     message.reply(reply);
 }
 
-// Initialize WhatsApp client
 client.initialize();
+
+// Start Express server
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Server is running!');
+});
