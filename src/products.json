@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "name": "Produk A",
+    "name": "TikTok",
     "description": "Deskripsi singkat tentang Produk A.",
-    "image": "/assets/images/produk-a.jpg",
+    "image": "/assets/images/tiktok.png",
     "options": [
       { "id": "1", "name": "Pilihan 1", "price": 100000 },
       { "id": "2", "name": "Pilihan 2", "price": 120000 },
@@ -14,9 +14,9 @@
   },
   {
     "id": "2",
-    "name": "Produk B",
+    "name": "Youtube",
     "description": "Deskripsi singkat tentang Produk B.",
-    "image": "/assets/images/produk-b.jpg",
+    "image": "/assets/images/youtube.png",
     "options": [
       { "id": "1", "name": "Pilihan 1", "price": 110000 },
       { "id": "2", "name": "Pilihan 2", "price": 130000 },
@@ -27,9 +27,9 @@
   },
   {
     "id": "3",
-    "name": "Produk C",
+    "name": "Facebook",
     "description": "Deskripsi singkat tentang Produk C.",
-    "image": "/assets/images/produk-c.jpg",
+    "image": "/assets/images/facebook.png",
     "options": [
       { "id": "1", "name": "Pilihan 1", "price": 105000 },
       { "id": "2", "name": "Pilihan 2", "price": 125000 },
@@ -40,9 +40,9 @@
   },
   {
     "id": "4",
-    "name": "Produk D",
+    "name": "Instagram",
     "description": "Deskripsi singkat tentang Produk D.",
-    "image": "/assets/images/produk-d.jpg",
+    "image": "/assets/images/instagram.png",
     "options": [
       { "id": "1", "name": "Pilihan 1", "price": 115000 },
       { "id": "2", "name": "Pilihan 2", "price": 135000 },
@@ -53,9 +53,9 @@
   },
   {
     "id": "5",
-    "name": "Produk E",
+    "name": "Alat Live",
     "description": "Deskripsi singkat tentang Produk E.",
-    "image": "/assets/images/produk-e.jpg",
+    "image": "/assets/images/alatlive.png",
     "options": [
       { "id": "1", "name": "Pilihan 1", "price": 120000 },
       { "id": "2", "name": "Pilihan 2", "price": 140000 },
