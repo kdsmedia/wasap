@@ -1,2 +1,15 @@
-node_modules
+
+### 5. **File `.gitignore`**
+
+```gitignore
+# Node modules
+node_modules/
+
+# .env file
 .env
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
