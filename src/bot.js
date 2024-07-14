@@ -55,15 +55,15 @@ client.on('message', async message => {
 
         const option = product.options.find(o => o.id == quantity);
         totalPrice = option.price * parseInt(quantity, 10);
-        const reply = `Total harga: Rp${totalPrice}\n\nPilih metode pembayaran:\n1. QRIS\n2. DANA`;
+        const reply = `Total: Rp${totalPrice}\n\nPilih metode pembayaran:\n1. QRIS\n2. DANA`;
 
         message.reply(reply);
     } else if (message.body === '1') {
-        const reply = `Silakan melakukan pembayaran melalui QRIS dengan total harga Rp${totalPrice}.\n\n[QRIS](assets/qris.jpeg)\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
+        const reply = `Silakan lakukan pembayaran melalui QRIS dengan total harga Rp${totalPrice}.\n\n[QRIS](assets/qris.jpeg)\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
 
         message.reply(reply);
     } else if (message.body === '2') {
-        const reply = `Silakan melakukan pembayaran ke akun DANA berikut:\n\nNama: ALTOMEDIA\nNomor DANA: 083872543697\n\nTotal harga: Rp${totalPrice}\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
+        const reply = `Silakan lakukan pembayaran ke akun DANA berikut:\n\nNama: ALTOMEDIA\nNomor DANA: 083872543697\n\nTotal harga: Rp${totalPrice}\n\nKirimkan foto bukti pembayaran setelah Anda melakukan pembayaran.`;
 
         message.reply(reply);
     } else if (message.body.toLowerCase().includes('bukti pembayaran')) {
