@@ -2,23 +2,44 @@ MIT License
 
 Copyright (c) 2024 SIDHANIE
 
-Diberikan izin secara gratis, kepada siapa pun yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait (selanjutnya disebut "Perangkat Lunak"), untuk melakukannya di bawah hak-hak berikut tanpa batasan dengan salinan Perangkat Lunak, termasuk tanpa batasan hak untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, mensublisensikan, dan/atau menjual salinan Perangkat Lunak, serta untuk memungkinkan orang-orang yang disediakan Perangkat Lunak untuk melakukan hal-hal tersebut, dengan syarat-syarat berikut:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1. Hak Cipta dan Pemberitahuan Lisensi
-   Salinan dari perangkat lunak ini harus disertakan dengan pemberitahuan hak cipta di atas dan pemberitahuan lisensi ini dalam semua salinan atau bagian substansial dari perangkat lunak ini.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-2. Kewajiban Hukum
-   Perangkat Lunak disediakan "SEBAGAIMANA ADANYA", tanpa jaminan apapun, baik tersurat maupun tersirat, termasuk tetapi tidak terbatas pada jaminan tersirat mengenai kelayakan untuk diperdagangkan, kesesuaian untuk tujuan tertentu, atau tidak melanggar hak. Dalam hal apapun, para pemegang hak cipta atau pemegang lisensi tidak bertanggung jawab atas klaim, kerusakan, atau kewajiban lain, baik dalam tindakan kontrak, kesalahan (termasuk kelalaian), atau sebaliknya, yang timbul dari atau sehubungan dengan perangkat lunak ini atau penggunaan atau transaksi lainnya yang dilakukan sehubungan dengan perangkat lunak ini.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-3. Pembatasan Tanggung Jawab
-   Dalam hal apapun, pemegang hak cipta atau pemegang lisensi tidak akan bertanggung jawab atas kerugian atau kerusakan yang mungkin timbul dari penggunaan perangkat lunak ini. Ini termasuk, tetapi tidak terbatas pada, kerugian atau kerusakan akibat kehilangan data, kehilangan keuntungan, atau kerusakan tidak langsung, khusus, insidental, atau konsekuensial lainnya.
+---
 
-4. Tidak Ada Jaminan
-   Perangkat Lunak disediakan kepada Anda "SEBAGAIMANA ADANYA" tanpa jaminan apapun, baik tersurat maupun tersirat, dan semua risiko dalam menggunakan perangkat lunak ini sepenuhnya berada pada Anda. Dengan demikian, Anda bertanggung jawab penuh atas semua konsekuensi dari penggunaan perangkat lunak ini.
+MIT License
 
-5. Perjanjian Lisensi
-   Dengan menggunakan perangkat lunak ini, Anda menyetujui bahwa Anda memahami dan menerima syarat-syarat yang tertulis dalam lisensi ini, dan Anda menyetujui untuk mematuhi ketentuan-ketentuan tersebut.
+Copyright (c) 2024 SIDHANIE
 
-6. Hak-Hak Lain
-   Lisensi ini tidak memberikan hak paten atau hak atas merek dagang, hak cipta, atau hak kekayaan intelektual lainnya selain yang diberikan secara eksplisit dalam lisensi ini.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
