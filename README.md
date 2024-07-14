@@ -1,25 +1,18 @@
-# WhatsApp Bot for ALTOMEDIA Online Store
+# ALTOMEDIA WhatsApp Bot
 
-Bot WhatsApp ini adalah bot untuk toko online ALTOMEDIA. Bot ini memungkinkan pengguna untuk melihat produk, memilih produk, melakukan pemesanan, dan memilih metode pembayaran.
+Bot WhatsApp untuk ALTOMEDIA yang menyediakan fitur toko online.
 
 ## Fitur
 
-- Sambutan selamat datang
-- Daftar produk dan detail produk
-- Pilih produk dan jumlah
-- Proses pembayaran dengan QRIS atau DANA
-- Kirimkan bukti pembayaran
+- Menampilkan daftar produk
+- Memilih produk dan opsi produk
+- Mengelola proses pemesanan
+- Menyediakan metode pembayaran QRIS dan DANA
 
-## Cara Menggunakan
+## Setup
 
-1. **Unduh QR Code**: Jalankan `node index.js` untuk menghasilkan QR code.
-2. **Hubungkan WhatsApp**: Pindai QR code dengan WhatsApp.
-3. **Interaksi dengan Bot**: Mulai chat dengan bot dan ikuti instruksi untuk melihat produk dan melakukan pemesanan.
+### 1. Clone Repository
 
-## Instalasi di Heroku
-
-1. Buat aplikasi baru di [Heroku](https://www.heroku.com/).
-2. Unggah proyek Anda ke GitHub.
-3. Hubungkan repositori GitHub Anda dengan aplikasi Heroku.
-4. Atur variabel lingkungan jika diperlukan.
-5. Klik "Deploy Branch" untuk memulai aplikasi Anda.
+```bash
+git clone https://github.com/username/repository.git
+cd repository
