@@ -58,5 +58,17 @@
       { "id": 4, "name": "Pilihan E4", "price": 290000 },
       { "id": 5, "name": "Pilihan E5", "price": 340000 }
     ]
+  },
+  {
+    "name": "Produk F",
+    "description": "Deskripsi untuk Produk F.",
+    "image": "https://example.com/produk-f.jpg",
+    "options": [
+      { "id": 1, "name": "Pilihan F1", "price": 150000 },
+      { "id": 2, "name": "Pilihan F2", "price": 200000 },
+      { "id": 3, "name": "Pilihan F3", "price": 250000 },
+      { "id": 4, "name": "Pilihan F4", "price": 300000 },
+      { "id": 5, "name": "Pilihan F5", "price": 350000 }
+    ]
   }
 ]
